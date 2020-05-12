@@ -22,10 +22,3 @@ Tech Stack/Tools
     --> integrating this all with Flask
 
 
-To Fix:
-- PT quiz?
-- Symptoms quiz results on page
-
-
-References
-
