@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!doctype html>
+
+
+<h1> <img class="logo" src="/static/assets/logo1.png" /> <br> Symptoms Quiz</h1>
+<title>Symptoms Tracker</title>
+<!-- <link rel=stylesheet type=text/css href='/static/css/newstyle.css'> -->
+<div class=page>
+  <h2> Way to go! You've logged today's symptoms. </h2>
+  <div class=metanav>
+  <h4>Details</h4>
+
+<p>
+      Amount of criteria with no symptoms: 
+<label for="correcta" >{{summary["correct"]}}</label> 
+</p>
+      Amount of criteria with symptoms: 
+    <label for="wronga" >{{summary["wrong"]}}</label> 
+</p>
+<br>
+
+
+
+  <p>Share on the ClearEyed Blog!</p>
+  <p>
+      <a  href="/blog"><input type="button"
+          value="Share" &raquo;></a></p>
+
+<a  href="/home"><input type="button"
+  value="Back to Home" &raquo;></a></p>
+</div>
+
+{% endblock %}

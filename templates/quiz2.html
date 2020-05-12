@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!doctype html>
+<!-- <link rel=stylesheet type=text/css href='/static/css/style_miniquiz.css'> -->
+<h1> <img class="logo" src="/static/assets/logo1.png" /></h1>
+ 
+<div>
+  <h1>Physical Therapy Tracker</h1> 
+  <h2>Question #{{num}} of {{ntot}}</h2>
+  <div>
+
+<h3><b>{{question}}</b></h3>
+
+<h4>
+<form id='answerform_python2' method='post'  > <!-- action must match your next URL -->
+   <p>
+   <br /> 
+      <input type='radio' name='answer_quiz2' id="r1" value={{ans12}} /> <label for="r1" style="border:2px solid #ccc;border-style: groove;padding: 10px;">{{ans12}}</label> <br /> <br /> 
+      <input type='radio' name='answer_quiz2' id="r2" value={{ans22}} /> <label for="r2" style="border:2px solid #ccc;border-style: groove;padding: 10px;">{{ans22}}</label> <br /> <br /> 
+      <input type='radio' name='answer_quiz2' id="r3" value={{ans32}} /> <label for="r3" style="border:2px solid #ccc;border-style: groove;padding: 10px;">{{ans32}}</label> <br /> <br /> 
+      <input type='radio' name='answer_quiz2' id="r4" value={{ans42}} /> <label for="r4" style="border:2px solid #ccc;border-style: groove;padding: 10px;">{{ans42}}</label> <br /> <br />    
+    </p><p>
+   <input type='submit' value='Next Question' id="r7" formaction="/pt" /> <!--the 'value' is the word that will appear on your button.-->
+   </p>
+</form>
+</h4>
+</div>
+</div>
+{% endblock %}

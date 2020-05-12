@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!doctype html>
+
+
+<h1> <img class="logo" src="/static/assets/logo1.png" /> <br> PT Quiz</h1>
+<title>PT Tracker</title>
+<!-- <link rel=stylesheet type=text/css href='/static/css/newstyle.css'> -->
+<div class=page>
+  <h2> Way to go! You've logged today's physical therapy. </h2>
+  <div class=metanav>
+  <h4>Details</h4>
+
+<p>
+      Physical Therapy exercises completed: 
+<label for="correcta2" >{{summary2["correct2"]}}</label> 
+</p>
+      Physical Therapy exercises to continue: 
+    <label for="wronga2" >{{summary2["wrong2"]}}</label> 
+</p>
+<br>
+
+
+
+  <p>Share on the ClearEyed Blog!</p>
+  <p>
+      <a  href="/blog"><input type="button"
+          value="Share" &raquo;></a></p>
+
+<a  href="/home"><input type="button"
+  value="Back to Home" &raquo;></a></p>
+</div>
+
+{% endblock %}

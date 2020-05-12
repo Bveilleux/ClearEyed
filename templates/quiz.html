@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!doctype html>
+<!-- <link rel=stylesheet type=text/css href='/static/css/style_miniquiz.css'> -->
+<h1> <img class="logo" src="/static/assets/logo1.png" /></h1>
+ 
+<div>
+  <h1>Symptom Tracker</h1> 
+  <h2>Question #{{num}} of {{ntot}}</h2>
+  <div>
+
+<h3><b>{{question}}</b></h3>
+
+<h4>
+<form id='answerform_python' method='post'  > <!-- action must match your next URL -->
+   <p>
+   <br /> 
+      <input type='radio' name='answer_quiz' id="r1" value={{ans1}} /> <label for="r1" style="border:2px solid #ccc;border-style: groove;padding: 10px;">{{ans1}}</label> <br /> <br /> 
+      <input type='radio' name='answer_quiz' id="r2" value={{ans2}} /> <label for="r2" style="border:2px solid #ccc;border-style: groove;padding: 10px;">{{ans2}}</label> <br /> <br /> 
+      <input type='radio' name='answer_quiz' id="r3" value={{ans3}} /> <label for="r3" style="border:2px solid #ccc;border-style: groove;padding: 10px;">{{ans3}}</label> <br /> <br /> 
+      <input type='radio' name='answer_quiz' id="r4" value={{ans4}} /> <label for="r4" style="border:2px solid #ccc;border-style: groove;padding: 10px;">{{ans4}}</label> <br /> <br />    
+    </p><p>
+   <input type='submit' value='Next Question' id="r7" formaction="/symptoms" /> <!--the 'value' is the word that will appear on your button.-->
+   </p>
+</form>
+</h4>
+</div>
+</div>
+{% endblock %}

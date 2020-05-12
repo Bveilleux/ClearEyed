@@ -1,0 +1,24 @@
+Wednesday, 06. May 2020 06:14PM
+Current number: 1, Current question: Which of the following is the correct way to output the name of any function (including builtin functions) using Python?
+Correct answer: theFunction.__name__
+Current selection: theFunction.func_name
+Wednesday, 06. May 2020 08:37PM
+Current number: 7, Current question: Are you experiencing eye strain?
+Correct answer: 0 - Never!
+Current selection: 2
+Wednesday, 06. May 2020 08:37PM
+Current number: 7, Current question: Are you experiencing eye strain?
+Correct answer: 0 - Never!
+Current selection: 2
+Wednesday, 06. May 2020 08:38PM
+Current number: 7, Current question: Are you experiencing eye strain?
+Correct answer: 0 - Never!
+Current selection: 1
+Wednesday, 06. May 2020 08:38PM
+Current number: 7, Current question: Are you experiencing eye strain?
+Correct answer: 0 - Never!
+Current selection: 0
+Saturday, 09. May 2020 02:55PM
+Current number: 1, Current question: Are you experiencing headaches?
+Correct answer: 0 - Never!
+Current selection: 2
