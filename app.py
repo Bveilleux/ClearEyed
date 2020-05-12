@@ -36,7 +36,7 @@ def about():
         title = 'About'
     )
 
-@app.route("/Symptomtracker")
+@app.route("/symptomtracker")
 def tracker():
     return render_template(
       'tracker.html',
@@ -70,7 +70,7 @@ questions = {
 py_summary={}
 py_summary["correct"]=[]
 py_summary["wrong"]=[]
-py_summary["currentq"]=1
+py_summary["current_q"]=1
 app.nquestions=len(questions)
 
 #From the tracker page, the user selects the option to take the symptoms quiz which redirects here
@@ -97,7 +97,7 @@ def index():
 		
       # set the current question to the next number when checked
       session["current_question"] = str(int(session["current_question"])+1)
-      py_summary["currentq"]= max(int(session["current_question"]), py_summary["currentq"])	  
+      py_summary["current_q"]= max(int(session["current_question"]), py_summary["current_q"])	  
    
       if session["current_question"] in questions:
         # If the question exists in the dictionary, redirect to the question
@@ -143,7 +143,7 @@ questions2 = {
 py_summary2={}
 py_summary2["correct2"]=[]
 py_summary2["wrong2"]=[]
-py_summary2["currentq2"]=1
+py_summary2["current_q2"]=1
 app.nquestions2=len(questions2)
 
 
@@ -168,7 +168,7 @@ def index2():
 
       # set the current question to the next number when checked
       session["current_question2"] = str(int(session["current_question2"])+1)
-      py_summary2["currentq2"]= max(int(session["current_question2"]), py_summary2["currentq2"])	  
+      py_summary2["current_q2"]= max(int(session["current_question2"]), py_summary2["current_q2"])	  
    
       if session["current_question2"] in questions2:
         # If the question exists in the dictionary, redirect to the question
